@@ -1,6 +1,7 @@
-import { Ticket } from "../../icons/Ticket";
+import Button from "../Button";
+import Ticket from "../icons/Ticket";
 
-export function Hero() {
+export default function Hero() {
   return (
     <div className="w-[1219px] h-[695px] relative m-auto font-inter">
       <img src="/images/hero.png" alt="Hero" className="bg-cover rounded-[40px] absolute" width={1219} height={695} />
@@ -17,7 +18,7 @@ export function Hero() {
           that will make your event stand out from the rest.
         </p>
       </div>
-      <button className="font-rubik text-[24px] bg-primary text-primary-content w-[280px] h-[88px] rounded-[14px] absolute z-50 -bottom-[45px] inset-x-[485px]">Explore Event</button>
+      <Button classBtn={"absolute z-20 -bottom-[45px] left-[485px]"}>Explore Event</Button>
     </div>
   );
 }

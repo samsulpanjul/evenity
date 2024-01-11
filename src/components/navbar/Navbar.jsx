@@ -1,4 +1,4 @@
-export function Navbar() {
+export default function Navbar() {
   return (
     <nav className="flex justify-between mb-[37px] font-fredoka">
       <div className="text-[28px] font-semibold">Eventity.</div>

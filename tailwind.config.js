@@ -5,6 +5,11 @@ export default {
     colors: {
       primary: "#070148",
       "primary-content": "#fff",
+      gray: "#4B5563",
+      grayl: "#6B7280",
+      grayt: "#374151",
+      footer: "#171717",
+      "footer-content": "#D1D5DB",
     },
     extend: {},
     fontFamily: {
