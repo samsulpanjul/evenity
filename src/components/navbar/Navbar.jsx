@@ -1,3 +1,5 @@
+import { Link, NavLink } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <nav className="flex justify-between mb-[37px] font-fredoka">
@@ -5,21 +7,33 @@ export default function Navbar() {
       <div className="flex items-center gap-[98px]">
         <ul className="flex text-lg font-medium p-[10px] gap-[30px]">
           <li>
-            <a href="#">Home</a>
+            <NavLink to="/" className={({ isActive }) => (isActive ? "underline underline-offset-4" : "")}>
+              Home
+            </NavLink>
           </li>
           <li>
-            <a href="#">Pricing</a>
+            <NavLink to="/pricing" className={({ isActive }) => (isActive ? "underline underline-offset-4" : "")}>
+              Pricing
+            </NavLink>
           </li>
           <li>
-            <a href="#">Resouces</a>
+            <NavLink to="/resources" className={({ isActive }) => (isActive ? "underline underline-offset-4" : "")}>
+              Resources
+            </NavLink>
           </li>
           <li>
-            <a href="#">Helpdesk</a>
+            <NavLink to="/helpdesk" className={({ isActive }) => (isActive ? "underline underline-offset-4" : "")}>
+              Helpdesk
+            </NavLink>
           </li>
         </ul>
-        <div className="flex font-medium gap-[41px]">
-          <button className="font-medium">Login</button>
-          <button className="py-[18px] px-[40px] bg-primary rounded-[14px] text-primary-content">Register</button>
+        <div className="flex font-medium gap-[41px] place-items-center">
+          <Link to="/login" className="font-medium">
+            Login
+          </Link>
+          <Link to="/register" className="py-[18px] px-[40px] bg-primary rounded-[14px] text-primary-content">
+            Register
+          </Link>
         </div>
       </div>
     </nav>
