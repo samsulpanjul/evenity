@@ -2,7 +2,7 @@ import InputText from "../InputText";
 import AuthForm from "../layout/AuthForm";
 import { Link } from "react-router-dom";
 
-export default function Login() {
+export default function LoginForm() {
   return (
     <AuthForm>
       <p className="text-3xl font-bold text-center text-primary-content">Login</p>
