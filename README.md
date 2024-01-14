@@ -1,3 +1,3 @@
 # Evenity
 
-Demo web: [https://evenity-samsul.vercel.app/]
+Demo web: https://evenity-samsul.vercel.app/
