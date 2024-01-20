@@ -10,6 +10,8 @@ export default {
       grayt: "#374151",
       footer: "#171717",
       "footer-content": "#D1D5DB",
+      white: "#fff",
+      black: "#000",
     },
     extend: {},
     fontFamily: {
